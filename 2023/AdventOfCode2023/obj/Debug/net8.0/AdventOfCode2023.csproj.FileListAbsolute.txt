@@ -1,0 +1,14 @@
+C:\Users\Marco\OneDrive\Desktop\Advent Of Code\AdventOfCode2023\bin\Debug\net8.0\AdventOfCode2023.exe
+C:\Users\Marco\OneDrive\Desktop\Advent Of Code\AdventOfCode2023\bin\Debug\net8.0\AdventOfCode2023.deps.json
+C:\Users\Marco\OneDrive\Desktop\Advent Of Code\AdventOfCode2023\bin\Debug\net8.0\AdventOfCode2023.runtimeconfig.json
+C:\Users\Marco\OneDrive\Desktop\Advent Of Code\AdventOfCode2023\bin\Debug\net8.0\AdventOfCode2023.dll
+C:\Users\Marco\OneDrive\Desktop\Advent Of Code\AdventOfCode2023\bin\Debug\net8.0\AdventOfCode2023.pdb
+C:\Users\Marco\OneDrive\Desktop\Advent Of Code\AdventOfCode2023\obj\Debug\net8.0\AdventOfCode2023.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marco\OneDrive\Desktop\Advent Of Code\AdventOfCode2023\obj\Debug\net8.0\AdventOfCode2023.AssemblyInfoInputs.cache
+C:\Users\Marco\OneDrive\Desktop\Advent Of Code\AdventOfCode2023\obj\Debug\net8.0\AdventOfCode2023.AssemblyInfo.cs
+C:\Users\Marco\OneDrive\Desktop\Advent Of Code\AdventOfCode2023\obj\Debug\net8.0\AdventOfCode2023.csproj.CoreCompileInputs.cache
+C:\Users\Marco\OneDrive\Desktop\Advent Of Code\AdventOfCode2023\obj\Debug\net8.0\AdventOfCode2023.dll
+C:\Users\Marco\OneDrive\Desktop\Advent Of Code\AdventOfCode2023\obj\Debug\net8.0\refint\AdventOfCode2023.dll
+C:\Users\Marco\OneDrive\Desktop\Advent Of Code\AdventOfCode2023\obj\Debug\net8.0\AdventOfCode2023.pdb
+C:\Users\Marco\OneDrive\Desktop\Advent Of Code\AdventOfCode2023\obj\Debug\net8.0\AdventOfCode2023.genruntimeconfig.cache
+C:\Users\Marco\OneDrive\Desktop\Advent Of Code\AdventOfCode2023\obj\Debug\net8.0\ref\AdventOfCode2023.dll
