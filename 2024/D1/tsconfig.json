@@ -1,21 +1,42 @@
+// {
+//     "compilerOptions": {
+//         "target": "ES6", // Specify ECMAScript target version
+//         "module": "commonjs", // Specify module code generation
+//         "strict": true, // Enable all strict type-checking options
+//         "esModuleInterop": true, // Enables emit interoperability between CommonJS and ES Modules
+//         "skipLibCheck": true, // Skip type checking of declaration files
+//         "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
+//         "outDir": "./dist", // Redirect output structure to the directory
+//         "rootDir": "./src", // Specify the root directory of input files
+//         "resolveJsonModule": true, // Include modules from JSON files
+//         "sourceMap": true // Generates corresponding '.map' file
+//     },
+//     "include": [
+//         "src/**/*.ts" // Include all TypeScript files in the src directory
+//     ],
+//     "exclude": [
+//         "node_modules", // Exclude the node_modules directory
+//         "dist" // Exclude the dist directory
+//     ]
+// }
 {
     "compilerOptions": {
-        "target": "ES6", // Specify ECMAScript target version
-        "module": "commonjs", // Specify module code generation
-        "strict": true, // Enable all strict type-checking options
-        "esModuleInterop": true, // Enables emit interoperability between CommonJS and ES Modules
-        "skipLibCheck": true, // Skip type checking of declaration files
-        "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
-        "outDir": "./dist", // Redirect output structure to the directory
-        "rootDir": "./src", // Specify the root directory of input files
-        "resolveJsonModule": true, // Include modules from JSON files
-        "sourceMap": true // Generates corresponding '.map' file
-    },
-    "include": [
-        "src/**/*.ts" // Include all TypeScript files in the src directory
-    ],
-    "exclude": [
-        "node_modules", // Exclude the node_modules directory
-        "dist" // Exclude the dist directory
-    ]
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+        "module": "ESNext",
+        "lib": [
+            "ESNext",
+            "DOM"
+        ],
+        "strict": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "skipLibCheck": true,
+        "outDir": "./",
+        "forceConsistentCasingInFileNames": true,
+        "allowJs": true
+    }
 }
