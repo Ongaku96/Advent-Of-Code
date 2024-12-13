@@ -1,10 +1,30 @@
 const fs = require("fs");
-
+//#region PART 1
 retriveData().then((response) => {
     if (!response) return;
-    console.log(response.reduce((sum, e) => sum + Math.abs(e.first - e.second), 0));
+    let data = parseNumberPairs(response);
+    let pairs = data.first.map((e, i) => ({ first: e, second: data.second.length > i ? data.second[i] : e }));
+    console.log("PART 1: " + pairs.reduce((sum, e) => sum + Math.abs(e.first - e.second), 0));
+});
+//#endregion
+
+//#region PART 2
+retriveData().then((response) => {
+    if (!response) return;
+    let data = parseNumberPairs(response);
+    let refs = removeDuplicates(data.first);
+    counter = refs.map(item => data.second.filter(e => e === item).length);
+    console.log("PART 2: " + counter.reduce((sum, e, index) => sum + e * refs[index], 0));
 });
 
+function removeDuplicates(dataset) {
+    let unique = [];
+    for (const item of dataset) {
+        if (!unique.includes(item)) unique.push(item);
+    }
+    return unique;
+}
+//#endregion
 
 async function retriveData() {
     try {
@@ -15,14 +35,8 @@ async function retriveData() {
             });
         });
         let response = await reader.catch(ex => { throw ex; });
-        let data = parseNumberPairs(response);
         return data;
     } catch (ex) { console.error(ex); return null; }
-}
-
-const NumberPair = {
-    first: 0,
-    second: 0,
 }
 
 function parseNumberPairs(text) {
@@ -34,15 +48,12 @@ function parseNumberPairs(text) {
 
     [...matches].map(match => {
         first.push(Number(match[1])),
-            second.push(Number(match[2]))
+        second.push(Number(match[2]))
     });
 
     first.sort((a, b) => { return a - b; });
     second.sort((a, b) => { return a - b; });
 
-    return first.map((e, i) => ({
-        first: e,
-        second: second.length > i ? second[i] : e
-    }));
+    return { first, second };
 
 }
