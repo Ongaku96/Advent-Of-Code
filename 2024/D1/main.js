@@ -35,7 +35,7 @@ async function retriveData() {
             });
         });
         let response = await reader.catch(ex => { throw ex; });
-        return data;
+        return response;
     } catch (ex) { console.error(ex); return null; }
 }
 
@@ -48,7 +48,7 @@ function parseNumberPairs(text) {
 
     [...matches].map(match => {
         first.push(Number(match[1])),
-        second.push(Number(match[2]))
+            second.push(Number(match[2]))
     });
 
     first.sort((a, b) => { return a - b; });
